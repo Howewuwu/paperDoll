@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CDD47002A985C20000481C3 /* BoyDressUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDD46FF2A985C20000481C3 /* BoyDressUpViewController.swift */; };
+		9CDD47022A985C59000481C3 /* GirlDressUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDD47012A985C59000481C3 /* GirlDressUpViewController.swift */; };
 		9CF5B5212A9667DF0027BD9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5B5202A9667DF0027BD9C /* AppDelegate.swift */; };
 		9CF5B5232A9667DF0027BD9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5B5222A9667DF0027BD9C /* SceneDelegate.swift */; };
 		9CF5B5252A9667DF0027BD9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5B5242A9667DF0027BD9C /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9CDD46FF2A985C20000481C3 /* BoyDressUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoyDressUpViewController.swift; sourceTree = "<group>"; };
+		9CDD47012A985C59000481C3 /* GirlDressUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlDressUpViewController.swift; sourceTree = "<group>"; };
 		9CF5B51D2A9667DF0027BD9C /* paperDoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paperDoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF5B5202A9667DF0027BD9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF5B5222A9667DF0027BD9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				9CF5B5222A9667DF0027BD9C /* SceneDelegate.swift */,
 				9CF5B5242A9667DF0027BD9C /* ViewController.swift */,
 				9CF5B5262A9667DF0027BD9C /* Main.storyboard */,
+				9CDD47012A985C59000481C3 /* GirlDressUpViewController.swift */,
+				9CDD46FF2A985C20000481C3 /* BoyDressUpViewController.swift */,
 				9CF5B5292A9667E00027BD9C /* Assets.xcassets */,
 				9CF5B52B2A9667E00027BD9C /* LaunchScreen.storyboard */,
 				9CF5B52E2A9667E00027BD9C /* Info.plist */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CDD47002A985C20000481C3 /* BoyDressUpViewController.swift in Sources */,
+				9CDD47022A985C59000481C3 /* GirlDressUpViewController.swift in Sources */,
 				9CF5B5252A9667DF0027BD9C /* ViewController.swift in Sources */,
 				9CF5B5212A9667DF0027BD9C /* AppDelegate.swift in Sources */,
 				9CF5B5232A9667DF0027BD9C /* SceneDelegate.swift in Sources */,
