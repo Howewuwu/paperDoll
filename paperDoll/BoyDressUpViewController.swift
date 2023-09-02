@@ -16,6 +16,7 @@ extension BoyDressUpViewController: UIScrollViewDelegate {
         print(itemScrollView.contentOffset.x)
         print(itemScrollView.bounds.width)
         // scrollview 內的 view 寬為：750，照理來說在滑動時應該會是跑一半，數值應該是 375 / 375，但不知道為何數值是跑 360 / 390，在把裡面的 view 約束設為 780 時 page control 才能成功的動起來，難以理解。
+        // 後來發現是 Xcode 的 Bug，因為 iphone 12 的實際的寬是 390，但是 Xcode 顯示的是 375，所以 pageControll 才會無法正確顯示。
     }
 }
 
@@ -50,7 +51,7 @@ class BoyDressUpViewController: UIViewController {
     
     @IBOutlet weak var itemScrollViewPageControl: UIPageControl!
     
-    
+    var index = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,33 +80,39 @@ class BoyDressUpViewController: UIViewController {
                 itemButtons[i].configuration?.image = UIImage(named: "BoyHat-"+"\(i+1)")
             }
             for e in 2...4{
-                itemButtons[e].configuration?.image = UIImage(named: "null")
+                itemButtons[e].configuration?.image = UIImage(systemName: "nosign")
             }
+            index = 60
         case 61 :
-            itemButtons[0].configuration?.image = UIImage(named: "BoyBag")
+            itemButtons[0].configuration?.image = UIImage(named: "BoyBag-1")
             for e in 1...4{
-                itemButtons[e].configuration?.image = UIImage(named: "null")
+                itemButtons[e].configuration?.image = UIImage(systemName: "nosign")
             }
+            index = 61
         case 62 :
             for i in 0...4{
                 itemButtons[i].configuration?.image = UIImage(named: "BoyClothes-"+"\(i+1)")
             }
+            index = 62
         case 63 :
             for i in 0...2{
                 itemButtons[i].configuration?.image = UIImage(named: "BoyPants-"+"\(i+1)")
             }
             for e in 3...4{
-                itemButtons[e].configuration?.image = UIImage(named: "null")
+                itemButtons[e].configuration?.image = UIImage(systemName: "nosign")
             }
+            index = 63
         case 64 :
             for i in 0...2{
                 itemButtons[i].configuration?.image = UIImage(named: "BoyShoes-"+"\(i+1)")
             }
+            index = 64
         case 65 :
-            itemButtons[0].configuration?.image = UIImage(named: "BoySunglass")
+            itemButtons[0].configuration?.image = UIImage(named: "BoySunglass-1")
             for e in 1...4{
-                itemButtons[e].configuration?.image = UIImage(named: "null")
+                itemButtons[e].configuration?.image = UIImage(systemName: "nosign")
             }
+            index = 65
         default :
             print("OK")
         }
@@ -136,6 +143,23 @@ class BoyDressUpViewController: UIViewController {
     
     
     @IBAction func dressUpOnBoyButton(_ sender: UIButton) {
+        switch index {
+        case 60 :
+            hatImageView.image = UIImage(named: "BoyHat-"+"\(sender.tag + 1)")
+        case 61 :
+            bagImageView.image = UIImage(named: "BoyBag-"+"\(sender.tag + 1)")
+        case 62 :
+            clothesImageView.image = UIImage(named: "BoyClothes-"+"\(sender.tag + 1)")
+        case 63 :
+            pantsImageView.image = UIImage(named: "BoyPants-"+"\(sender.tag + 1)")
+        case 64 :
+            shoesImageView.image = UIImage(named: "BoyShoes-"+"\(sender.tag + 1)")
+        case 65 :
+            sunglassImageView.image = UIImage(named: "BoySunglass-"+"\(sender.tag + 1)")
+        default :
+            print("oh")
+        }
+        
         
     }
     
@@ -167,6 +191,10 @@ class BoyDressUpViewController: UIViewController {
         for i in 0...1{
             itemButtons[i].configuration?.image = UIImage(named: "BoyHat-"+"\(i+1)")
         }
+        for e in 2...4{
+            itemButtons[e].configuration?.image = UIImage(systemName: "nosign")
+        }
+        index = 60
         
     }
     

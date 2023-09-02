@@ -83,7 +83,7 @@ Style</string>
                                             <backgroundConfiguration key="background"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="7uy-oF-9r0" kind="show" id="Ocl-VL-3c7"/>
+                                            <segue destination="COD-zh-cqN" kind="show" id="wct-CA-vms"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -153,11 +153,11 @@ Style</string>
                                         <rect key="frame" x="127" y="73" width="118" height="77"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BoyBag" translatesAutoresizingMaskIntoConstraints="NO" id="ovQ-4Z-jiD">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BoyBag-1" translatesAutoresizingMaskIntoConstraints="NO" id="ovQ-4Z-jiD">
                                         <rect key="frame" x="143" y="297" width="87" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BoySunglass" translatesAutoresizingMaskIntoConstraints="NO" id="OVl-8r-E8l">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BoySunglass-1" translatesAutoresizingMaskIntoConstraints="NO" id="OVl-8r-E8l">
                                         <rect key="frame" x="129" y="142" width="112" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -330,49 +330,49 @@ Style</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQC-mE-Wrg">
                                         <rect key="frame" x="0.0" y="0.0" width="780" height="196"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mI-N1-sBx" userLabel="item-0">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="0" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mI-N1-sBx" userLabel="item-0">
                                                 <rect key="frame" x="8" y="58" width="100" height="80"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
-                                                    <action selector="dressUpOnBoyButton:" destination="hZr-d3-ORP" eventType="touchUpInside" id="IR9-zA-Fyh"/>
+                                                    <action selector="dressUpOnBoyButton:" destination="hZr-d3-ORP" eventType="touchUpInside" id="Og7-id-hrp"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsE-cY-hzh" userLabel="item-2">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thx-jM-IGf" userLabel="item-1">
+                                                <rect key="frame" x="145" y="58" width="91" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="dressUpOnBoyButton:" destination="hZr-d3-ORP" eventType="touchUpInside" id="R88-Gb-wok"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsE-cY-hzh" userLabel="item-2">
                                                 <rect key="frame" x="288" y="58" width="78" height="80"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
-                                                    <action selector="dressUpOnBoyButton:" destination="hZr-d3-ORP" eventType="touchUpInside" id="h3l-hQ-Rqr"/>
+                                                    <action selector="dressUpOnBoyButton:" destination="hZr-d3-ORP" eventType="touchUpInside" id="74w-Xu-xAE"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KJ-qA-VrP" userLabel="item-3">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KJ-qA-VrP" userLabel="item-3">
                                                 <rect key="frame" x="460" y="58" width="100" height="80"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
-                                                    <action selector="dressUpOnBoyButton:" destination="hZr-d3-ORP" eventType="touchUpInside" id="EIa-aJ-CQN"/>
+                                                    <action selector="dressUpOnBoyButton:" destination="hZr-d3-ORP" eventType="touchUpInside" id="eQs-3c-TKD"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXV-Um-uSu" userLabel="item-4">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXV-Um-uSu" userLabel="item-4">
                                                 <rect key="frame" x="620" y="58" width="100" height="80"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
-                                                    <action selector="dressUpOnBoyButton:" destination="hZr-d3-ORP" eventType="touchUpInside" id="xJE-iF-cSi"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thx-jM-IGf" userLabel="item-1">
-                                                <rect key="frame" x="152" y="58" width="91" height="80"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
-                                                <connections>
-                                                    <action selector="dressUpOnBoyButton:" destination="hZr-d3-ORP" eventType="touchUpInside" id="rd1-dC-CI3"/>
+                                                    <action selector="dressUpOnBoyButton:" destination="hZr-d3-ORP" eventType="touchUpInside" id="JfE-tU-yhL"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -455,35 +455,355 @@ Style</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1r-VH-Myy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261.60000000000002" y="985.71428571428578"/>
+            <point key="canvasLocation" x="782" y="749"/>
         </scene>
         <!--Girl Dress Up View Controller-->
-        <scene sceneID="EWo-rJ-JSP">
+        <scene sceneID="PI7-kW-git">
             <objects>
-                <viewController id="7uy-oF-9r0" customClass="GirlDressUpViewController" customModule="paperDoll" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3US-IY-9k7">
+                <viewController id="COD-zh-cqN" customClass="GirlDressUpViewController" customModule="paperDoll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s16-WE-nAc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Qgo-rz-kVq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ZO-M7-F8v">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="504"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GirlBackground" translatesAutoresizingMaskIntoConstraints="NO" id="kGn-3t-QZF">
+                                        <rect key="frame" x="-32" y="45" width="407" height="447"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GirlBody" translatesAutoresizingMaskIntoConstraints="NO" id="XE2-Ip-1VQ">
+                                        <rect key="frame" x="138" y="86" width="120" height="410"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GirlClothes-1" translatesAutoresizingMaskIntoConstraints="NO" id="DU0-7R-cw9">
+                                        <rect key="frame" x="70" y="194" width="228" height="119"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GirlPants-1" translatesAutoresizingMaskIntoConstraints="NO" id="gJO-Y8-JPf">
+                                        <rect key="frame" x="133" y="307" width="101" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GirlShoes-3" translatesAutoresizingMaskIntoConstraints="NO" id="gMm-jM-JuG">
+                                        <rect key="frame" x="159" y="457" width="50" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GirlSunglass-1" translatesAutoresizingMaskIntoConstraints="NO" id="dAW-50-u9M">
+                                        <rect key="frame" x="129" y="142" width="112" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GirlHat-1" translatesAutoresizingMaskIntoConstraints="NO" id="ghG-yf-Ipu">
+                                        <rect key="frame" x="132" y="73" width="103" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88150376080000004" green="0.83032496899999997" blue="0.69602997529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZO-6v-Jt2">
+                                <rect key="frame" x="0.0" y="505" width="375" height="42"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eus-qP-wyX">
+                                        <rect key="frame" x="0.0" y="0.0" width="557" height="42"/>
+                                        <subviews>
+                                            <view tag="50" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MrE-nC-9oB">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="60" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Nz-da-j79">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Hat">
+                                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                                <color key="backgroundColor" red="0.88235294819999999" green="0.83137255909999996" blue="0.69411766529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="itemCategoryButtonCheck:" destination="COD-zh-cqN" eventType="touchUpInside" id="jUb-sg-7B0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                            <view tag="51" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ca-QV-Gqf">
+                                                <rect key="frame" x="80" y="0.0" width="90" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="61" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yom-lu-2jw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Bag">
+                                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                                <color key="backgroundColor" red="0.88235294819999999" green="0.83137255909999996" blue="0.69411766529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="itemCategoryButtonCheck:" destination="COD-zh-cqN" eventType="touchUpInside" id="Hum-D3-wug"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view tag="52" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UEf-4f-RfC">
+                                                <rect key="frame" x="170" y="0.0" width="94" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="62" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qme-Ia-ik2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Clothes">
+                                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                                <color key="backgroundColor" red="0.88235294819999999" green="0.83137255909999996" blue="0.69411766529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="itemCategoryButtonCheck:" destination="COD-zh-cqN" eventType="touchUpInside" id="8TK-H1-E8Z"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view tag="53" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Evj-8Y-eJh">
+                                                <rect key="frame" x="264" y="0.0" width="77" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="63" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mA-XR-w8Y">
+                                                        <rect key="frame" x="0.0" y="0.0" width="77" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Pants">
+                                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                                <color key="backgroundColor" red="0.88235294819999999" green="0.83137255909999996" blue="0.69411766529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="itemCategoryButtonCheck:" destination="COD-zh-cqN" eventType="touchUpInside" id="h4O-L4-x4F"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view tag="54" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pc1-1v-d26">
+                                                <rect key="frame" x="464" y="0.0" width="93" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="64" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGn-v7-blW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Shoes">
+                                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                                <color key="backgroundColor" red="0.88235294819999999" green="0.83137255909999996" blue="0.69411766529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="itemCategoryButtonCheck:" destination="COD-zh-cqN" eventType="touchUpInside" id="KJg-tp-RKo"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view tag="55" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FfQ-4z-tRA">
+                                                <rect key="frame" x="341" y="0.0" width="123" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="65" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcP-LS-R49">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Sunglass">
+                                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                                <color key="backgroundColor" red="0.88235294819999999" green="0.83137255909999996" blue="0.69411766529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="itemCategoryButtonCheck:" destination="COD-zh-cqN" eventType="touchUpInside" id="dvt-BY-xOc"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="iPe-mb-3Bi"/>
+                                            <constraint firstAttribute="width" constant="557" id="yKl-Bv-8lb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88235294819999999" green="0.83137255909999996" blue="0.69411766529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Eus-qP-wyX" firstAttribute="top" secondItem="jcp-lu-ahk" secondAttribute="top" id="1wb-pj-ImT"/>
+                                    <constraint firstItem="Eus-qP-wyX" firstAttribute="leading" secondItem="jcp-lu-ahk" secondAttribute="leading" id="4Ch-1s-xnk"/>
+                                    <constraint firstItem="Eus-qP-wyX" firstAttribute="bottom" secondItem="jcp-lu-ahk" secondAttribute="bottom" id="6CX-Vt-LxC"/>
+                                    <constraint firstItem="Eus-qP-wyX" firstAttribute="trailing" secondItem="jcp-lu-ahk" secondAttribute="trailing" id="SK2-dJ-SJY"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="jcp-lu-ahk"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="SFu-bE-AJ6"/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uem-De-rbr">
+                                <rect key="frame" x="0.0" y="547" width="375" height="195"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P67-Wl-IdO">
+                                        <rect key="frame" x="0.0" y="0.0" width="780" height="196"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="0" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjJ-vh-bJI" userLabel="item-0">
+                                                <rect key="frame" x="8" y="58" width="100" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="dressUpOnGirlButton:" destination="COD-zh-cqN" eventType="touchUpInside" id="eeD-sO-jOY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLm-sS-Bey" userLabel="item-1">
+                                                <rect key="frame" x="145" y="58" width="91" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="dressUpOnGirlButton:" destination="COD-zh-cqN" eventType="touchUpInside" id="If9-O1-CtY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4G-al-OED" userLabel="item-2">
+                                                <rect key="frame" x="288" y="58" width="78" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="dressUpOnGirlButton:" destination="COD-zh-cqN" eventType="touchUpInside" id="8vX-UW-gVE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGu-6u-Dcf" userLabel="item-3">
+                                                <rect key="frame" x="460" y="58" width="100" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="dressUpOnGirlButton:" destination="COD-zh-cqN" eventType="touchUpInside" id="E7K-bd-IgA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RM6-Da-2dS" userLabel="item-4">
+                                                <rect key="frame" x="620" y="58" width="100" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="dressUpOnGirlButton:" destination="COD-zh-cqN" eventType="touchUpInside" id="9H0-Ov-o3R"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.88150376080000004" green="0.83032496899999997" blue="0.69602997529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="196" id="2iO-J1-URm"/>
+                                            <constraint firstAttribute="width" constant="780" id="gSq-gd-ULN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88235294819999999" green="0.83137255909999996" blue="0.69411766529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="P67-Wl-IdO" firstAttribute="top" secondItem="Uem-De-rbr" secondAttribute="top" id="CGB-An-vBq"/>
+                                    <constraint firstItem="P67-Wl-IdO" firstAttribute="trailing" secondItem="Uem-De-rbr" secondAttribute="trailing" id="DAX-p3-uT7"/>
+                                    <constraint firstItem="P67-Wl-IdO" firstAttribute="leading" secondItem="Uem-De-rbr" secondAttribute="leading" id="OBG-qb-5Nz"/>
+                                    <constraint firstItem="P67-Wl-IdO" firstAttribute="top" secondItem="Uem-De-rbr" secondAttribute="top" id="c1S-Pt-0JI"/>
+                                    <constraint firstItem="P67-Wl-IdO" firstAttribute="bottom" secondItem="Uem-De-rbr" secondAttribute="bottom" id="u78-gs-e71"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="COD-zh-cqN" id="pXz-f7-tnw"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="nKg-x2-e9Y">
+                                <rect key="frame" x="130" y="742" width="115" height="26"/>
+                                <color key="currentPageIndicatorTintColor" red="0.7155385688" green="0.58801964750000002" blue="0.86055871210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="pageControlValueChange:" destination="COD-zh-cqN" eventType="valueChanged" id="CSU-Bh-i5o"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p0C-tR-tYE"/>
+                        <color key="backgroundColor" red="0.88235294819999999" green="0.83137255909999996" blue="0.69411766529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="FZO-6v-Jt2" firstAttribute="leading" secondItem="p0C-tR-tYE" secondAttribute="leading" id="7KY-nl-nTf"/>
+                            <constraint firstItem="FZO-6v-Jt2" firstAttribute="trailing" secondItem="p0C-tR-tYE" secondAttribute="trailing" id="EcJ-pz-T79"/>
+                            <constraint firstItem="p0C-tR-tYE" firstAttribute="bottom" secondItem="1ZO-M7-F8v" secondAttribute="bottom" constant="274" id="N6B-cs-D3t"/>
+                            <constraint firstItem="p0C-tR-tYE" firstAttribute="trailing" secondItem="nKg-x2-e9Y" secondAttribute="trailing" constant="130" id="NOC-KP-GKk"/>
+                            <constraint firstItem="FZO-6v-Jt2" firstAttribute="top" secondItem="1ZO-M7-F8v" secondAttribute="bottom" constant="1" id="PM2-n8-KSc"/>
+                            <constraint firstItem="p0C-tR-tYE" firstAttribute="bottom" secondItem="nKg-x2-e9Y" secondAttribute="bottom" constant="10" id="R9A-ZD-1qF"/>
+                            <constraint firstItem="Uem-De-rbr" firstAttribute="top" secondItem="FZO-6v-Jt2" secondAttribute="bottom" id="bsx-xq-rwR"/>
+                            <constraint firstItem="1ZO-M7-F8v" firstAttribute="top" secondItem="s16-WE-nAc" secondAttribute="top" id="iTK-Ha-jHa"/>
+                            <constraint firstItem="p0C-tR-tYE" firstAttribute="bottom" secondItem="FZO-6v-Jt2" secondAttribute="bottom" constant="231" id="j0N-Qo-tH2"/>
+                            <constraint firstItem="nKg-x2-e9Y" firstAttribute="leading" secondItem="p0C-tR-tYE" secondAttribute="leading" constant="130" id="kEc-Yb-sXm"/>
+                            <constraint firstItem="Uem-De-rbr" firstAttribute="trailing" secondItem="p0C-tR-tYE" secondAttribute="trailing" id="kHO-ua-xmG"/>
+                            <constraint firstItem="Uem-De-rbr" firstAttribute="leading" secondItem="p0C-tR-tYE" secondAttribute="leading" id="pAa-60-LGG"/>
+                            <constraint firstItem="1ZO-M7-F8v" firstAttribute="trailing" secondItem="p0C-tR-tYE" secondAttribute="trailing" id="pIi-7B-pNH"/>
+                            <constraint firstItem="1ZO-M7-F8v" firstAttribute="leading" secondItem="p0C-tR-tYE" secondAttribute="leading" id="rNz-aX-Co8"/>
+                            <constraint firstItem="nKg-x2-e9Y" firstAttribute="top" secondItem="Uem-De-rbr" secondAttribute="bottom" id="tt7-n0-chM"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="MuN-en-o1n"/>
+                    <navigationItem key="navigationItem" id="1gp-TR-IEL"/>
+                    <connections>
+                        <outlet property="clothesImageView" destination="DU0-7R-cw9" id="f8a-YC-j3H"/>
+                        <outlet property="hatImageView" destination="ghG-yf-Ipu" id="t4D-f5-afX"/>
+                        <outlet property="itemCategoryScrollView" destination="FZO-6v-Jt2" id="i3m-Jh-RE8"/>
+                        <outlet property="itemScrollView" destination="Uem-De-rbr" id="ZkL-U6-XLM"/>
+                        <outlet property="itemScrollViewPageControl" destination="nKg-x2-e9Y" id="EAk-6f-v6a"/>
+                        <outlet property="pantsImageView" destination="gJO-Y8-JPf" id="F3P-6L-vnO"/>
+                        <outlet property="shoesImageView" destination="gMm-jM-JuG" id="TxK-72-6l9"/>
+                        <outlet property="sunglassImageView" destination="dAW-50-u9M" id="wmt-Tu-cHb"/>
+                        <outletCollection property="itemCategoryViews" destination="MrE-nC-9oB" collectionClass="NSMutableArray" id="WAl-XK-XlX"/>
+                        <outletCollection property="itemCategoryViews" destination="9ca-QV-Gqf" collectionClass="NSMutableArray" id="xeG-T2-Jdo"/>
+                        <outletCollection property="itemCategoryViews" destination="UEf-4f-RfC" collectionClass="NSMutableArray" id="Qbe-xa-5qd"/>
+                        <outletCollection property="itemCategoryViews" destination="Evj-8Y-eJh" collectionClass="NSMutableArray" id="o0h-IN-wjA"/>
+                        <outletCollection property="itemCategoryViews" destination="pc1-1v-d26" collectionClass="NSMutableArray" id="G57-wY-58v"/>
+                        <outletCollection property="itemCategoryViews" destination="FfQ-4z-tRA" collectionClass="NSMutableArray" id="VX7-xJ-h9Y"/>
+                        <outletCollection property="itemCategoryButtons" destination="9Nz-da-j79" collectionClass="NSMutableArray" id="vEN-tb-TIJ"/>
+                        <outletCollection property="itemCategoryButtons" destination="yom-lu-2jw" collectionClass="NSMutableArray" id="lCb-Pb-vh5"/>
+                        <outletCollection property="itemCategoryButtons" destination="qme-Ia-ik2" collectionClass="NSMutableArray" id="uOx-Jy-eAY"/>
+                        <outletCollection property="itemCategoryButtons" destination="2mA-XR-w8Y" collectionClass="NSMutableArray" id="XZ4-PZ-CjV"/>
+                        <outletCollection property="itemCategoryButtons" destination="JGn-v7-blW" collectionClass="NSMutableArray" id="s3v-Jb-7mH"/>
+                        <outletCollection property="itemCategoryButtons" destination="jcP-LS-R49" collectionClass="NSMutableArray" id="L6a-RH-W3R"/>
+                        <outletCollection property="itemButtons" destination="sjJ-vh-bJI" collectionClass="NSMutableArray" id="nuG-DT-fUO"/>
+                        <outletCollection property="itemButtons" destination="gLm-sS-Bey" collectionClass="NSMutableArray" id="flM-uV-S1K"/>
+                        <outletCollection property="itemButtons" destination="d4G-al-OED" collectionClass="NSMutableArray" id="ZEw-2N-F2A"/>
+                        <outletCollection property="itemButtons" destination="UGu-6u-Dcf" collectionClass="NSMutableArray" id="yA1-KK-Odk"/>
+                        <outletCollection property="itemButtons" destination="RM6-Da-2dS" collectionClass="NSMutableArray" id="zfv-Vq-CgV"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sGE-cA-Axp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Zz-GY-uUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1873" y="420"/>
+            <point key="canvasLocation" x="1671" y="326"/>
         </scene>
     </scenes>
     <resources>
         <image name="BoyBackground" width="373" height="485"/>
-        <image name="BoyBag" width="97" height="28"/>
+        <image name="BoyBag-1" width="97" height="28"/>
         <image name="BoyBody" width="115" height="457"/>
         <image name="BoyClothes-2" width="142" height="140"/>
         <image name="BoyHat-2" width="150" height="97"/>
         <image name="BoyPants-3" width="98" height="208"/>
         <image name="BoyShoes-1" width="71" height="37"/>
-        <image name="BoySunglass" width="111" height="21"/>
+        <image name="BoySunglass-1" width="111" height="21"/>
+        <image name="GirlBackground" width="353" height="424"/>
         <image name="GirlBody" width="138" height="448"/>
+        <image name="GirlClothes-1" width="129" height="127"/>
+        <image name="GirlHat-1" width="122" height="59"/>
+        <image name="GirlPants-1" width="105" height="207"/>
+        <image name="GirlShoes-3" width="56" height="35"/>
+        <image name="GirlSunglass-1" width="119" height="22"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
