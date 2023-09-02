@@ -7,13 +7,15 @@
 
 import UIKit
 
-
-
+// 擴展GirlDressUpViewController以實現UIScrollViewDelegate的功能
 extension GirlDressUpViewController: UIScrollViewDelegate {
+    // 當滾動視圖停止滾動後，此方法將被調用
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-
+        // 通過滾動視圖的水平偏移量和其寬度計算當前頁碼
         let pageNumber = itemScrollView.contentOffset.x / itemScrollView.bounds.width
+        // 更新頁面控制器的當前頁
         itemScrollViewPageControl.currentPage = Int(pageNumber)
+        // 打印滾動視圖的水平偏移量和寬度，用於調試
         print(itemScrollView.contentOffset.x)
         print(itemScrollView.bounds.width)
         // scrollview 內的 view 寬為：750，照理來說在滑動時應該會是跑一半，數值應該是 375 / 375，但不知道為何數值是跑 360 / 390，在把裡面的 view 約束設為 780 時 page control 才能成功的動起來，難以理解。
@@ -21,51 +23,47 @@ extension GirlDressUpViewController: UIScrollViewDelegate {
     }
 }
 
-
+// 主要的ViewController，用於女孩的換裝功能
 class GirlDressUpViewController: UIViewController {
-    
-    
+    // 從Storyboard連接的IBOutlet，代表界面上的各種UI元素
     @IBOutlet weak var hatImageView: UIImageView!
     @IBOutlet weak var sunglassImageView: UIImageView!
     @IBOutlet weak var clothesImageView: UIImageView!
     @IBOutlet weak var pantsImageView: UIImageView!
     @IBOutlet weak var shoesImageView: UIImageView!
-    
-    
-    
+
     @IBOutlet weak var itemCategoryScrollView: UIScrollView!
     @IBOutlet var itemCategoryViews: [UIView]!
     @IBOutlet var itemCategoryButtons: [UIButton]!
-    
-    
-    
+
     @IBOutlet weak var itemScrollView: UIScrollView!
     @IBOutlet var itemButtons: [UIButton]!
-    
-    
+
     @IBOutlet weak var itemScrollViewPageControl: UIPageControl!
     
-    
+    // 用於追踪當前選擇的項目類別
     var index = 0
     
+    // 當視圖加載完成後，此方法將被調用
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 設置滾動視圖的代理為自己，以便接收滾動事件
         itemScrollView.delegate = self
+        // 初始化屏幕上的UI元素
         initialScreen()
-        
     }
     
-    
+    // 當頁面控制器的值改變時，此方法將被調用
     @IBAction func pageControlValueChange(_ sender: UIPageControl) {
+        // 計算滾動視圖應該滾動到的位置，並將其滾動到該位置
         let point = CGPoint(x: itemScrollView.bounds.width * CGFloat(sender.currentPage), y: 0)
         itemScrollView.setContentOffset(point, animated: true)
     }
     
-    
-    
-    
+    // 當項目類別按鈕被點擊時，此方法將被調用
     @IBAction func itemCategoryButtonCheck(_ sender: UIButton) {
+        // 根據被點擊的按鈕的tag值來決定要顯示哪一類的項目
         itemCategoryColorChange(sender.tag % 60)
         
         switch sender.tag {
@@ -109,12 +107,9 @@ class GirlDressUpViewController: UIViewController {
         default :
             print("OK")
         }
-        
-        
-
     }
     
-    
+    // 用於更新項目類別按鈕和視圖的顏色
     func itemCategoryColorChange (_ senderTag: Int) {
         for view in itemCategoryViews {
             if view.tag % 50 == senderTag {
@@ -133,11 +128,9 @@ class GirlDressUpViewController: UIViewController {
         }
     }
     
-    
-    
-    
-    
+    // 當換裝按鈕被點擊時，此方法將被調用
     @IBAction func dressUpOnGirlButton(_ sender: UIButton) {
+        // 根據當前選擇的項目類別來決定要更換哪一部分的服裝
         switch index {
         case 60 :
             hatImageView.image = UIImage(named: "GirlHat-"+"\(sender.tag + 1)")
@@ -152,23 +145,21 @@ class GirlDressUpViewController: UIViewController {
         default :
             print("oh")
         }
-        
-        
     }
     
+    // 當隨機按鈕被點擊時，此方法將被調用
+    @IBAction func randomButton(_ sender: UIButton) {
+        // 隨機選擇服裝圖片並更新到對應的ImageView
+        hatImageView.image = UIImage(named: "GirlHat-\(Int.random(in: 1...9))")
+        sunglassImageView.image = UIImage(named: "GirlSunglass-\(Int.random(in: 1...9))")
+        clothesImageView.image = UIImage(named: "GirlClothes-\(Int.random(in: 1...3))")
+        pantsImageView.image = UIImage(named: "GirlPants-\(Int.random(in: 1...3))")
+        shoesImageView.image = UIImage(named: "GirlShoes-\(Int.random(in: 1...3))")
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    // 用於初始化屏幕上的UI元素
     func initialScreen () {
+        // 設置初始的服裝圖片
         hatImageView.image = UIImage(named: "null")
         sunglassImageView.image = UIImage(named: "null")
         clothesImageView.image = UIImage(named: "GirlClothes-1")
@@ -178,7 +169,7 @@ class GirlDressUpViewController: UIViewController {
         itemCategoryButtons[0].isSelected = true
         itemCategoryColorChange(0)
         
-        //顯示body選項
+        // 顯示body選項
         for i in 0...1{
             itemButtons[i].configuration?.image = UIImage(named: "GirlHat-"+"\(i+1)")
         }
@@ -186,10 +177,5 @@ class GirlDressUpViewController: UIViewController {
             itemButtons[e].configuration?.image = UIImage(systemName: "nosign")
         }
         index = 60
-        
     }
-    
-    
-    
-    
 }
